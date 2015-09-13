@@ -1,0 +1,12 @@
+pcm.!default {
+    type hw
+    card D2
+    device 0
+}
+
+ctl.!default {
+    type hw
+    card D2
+}
+defaults.pcm.!card D2
+defaults.pcm.!device 0
