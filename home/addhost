@@ -1,17 +1,15 @@
 #!/bin/bash
 HOST="$1" IP=$(host-woods "$1" | cut -f3 | head -1) ALIAS="$2"; echo "$IP" "$HOST" "$ALIAS" >> /etc/hosts
 
-./addhost google.co.uk
+./addhost google.co.uk gu
 ./addhost google.com g 
-./addhost twitter.com
-./addhost facebook.com
-./addhost github.com
-./addhost bitbucket.org
-./addhost last.fm
-./addhost amazon.co.uk a
-./addhost ebay.co.uk e
-./addhost chomikuj.pl
+./addhost twitter.com t
+./addhost facebook.com f
+./addhost github.com gi
+./addhost bitbucket.org bi
+./addhost amazon.co.uk am
+./addhost ebay.co.uk eb
 ./addhost youtube.com y
-./addhost dogwars.com
-./addhost tuserie.com
-./addhost kwejk.pl kw
+./addhost aws.amazon.com aw
+./addhost gandi.net ga
+./addhost code.google.com/apis/console/ cog
