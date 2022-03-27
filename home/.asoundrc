@@ -10,3 +10,19 @@ ctl.!default {
 }
 defaults.pcm.!card D2
 defaults.pcm.!device 0
+
+# New playground with Software Volume Control:
+pcm.softvol {
+    type softvol
+    slave {
+           pcm "dmix"
+          }
+    control {
+           name "Master"
+           card D2
+          }
+}
+pcm.!default {
+    type plug
+    slave.pcm "softvol"
+}
